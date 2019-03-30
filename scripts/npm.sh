@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Based on https://github.com/glenpike/npm-g_nosudo
 npmdir="${HOME}/.npm-packages"
 
 # Create if folder dont exists
