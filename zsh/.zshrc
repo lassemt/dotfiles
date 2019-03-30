@@ -34,7 +34,7 @@ unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # Make mysql cli work with mamp
-export PATH="$PATH:/Applications/MAMP/Library/bin"
+# export PATH="$PATH:/Applications/MAMP/Library/bin"
 
 # set env variable for tty command
 export GPG_TTY=$(tty)
