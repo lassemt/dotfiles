@@ -25,10 +25,6 @@ alias st=subl
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
 
-# Import msdfgen
-# export PATH="${HOME}/projects/msdfgen/out/msdfgen:$PATH"
-alias msdfgen=${HOME}/projects/msdfgen/out/msdfgen
-
 # Change NPM global folder
 NPM_PACKAGES="${HOME}/.npm-packages"
 PATH="$NPM_PACKAGES/bin:$PATH"
