@@ -1,13 +1,18 @@
-# dotfiles
-zsh, git, Sublime Text 3, homebrew, node, more..
+# LasseMT's dotfiles
+based on [Overbryd's dotfiles](https://github.com/Overbryd/dotfiles).
 
-## Install homebrew
+## Bootstrap
+On a new mac, open a Terminal and run:
+```
+curl -O https://raw.githubusercontent.com/Overbryd/dotfiles/master/bootstrap.sh
+chmod +x bootstrap.sh
+./bootstrap.sh
+```
 
-## Install node
+### Maintenance
+Enter the ~/dotfiles directory, make changes and make it:
 
-
-## Install homebrew packages
-```brew zsh composer gnupg zsh-autosuggestions zsh-completions exiftool zsh-syntax-highlighting```
-MORE??
-
-##
+```
+cd ~/dotfiles
+make
+```
