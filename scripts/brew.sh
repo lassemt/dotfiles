@@ -21,6 +21,7 @@ brew install screen
 
 
 # Basics
+brew install node
 brew install git
 brew install git-lfs
 brew install zsh
