@@ -1,0 +1,26 @@
+[user]
+	name = Lasse Mejlvang Tvedt
+	email = himself@lassemt.com
+	signingkey = 11A5BF9DD0BC50F6
+
+[core]
+	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+  # Make `git rebase` safer on macOS
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+  interactive = auto
+
+[gpg]
+	program = gpg2
+
+[commit]
+  gpgsign = true
+  
+[github]
+  user = lassemt
