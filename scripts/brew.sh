@@ -7,9 +7,6 @@ brew install coreutils
 # Stow is used in this setup
 brew install stow
 
-
-brew install pinentry-mac
-
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
