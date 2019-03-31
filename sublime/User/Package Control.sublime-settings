@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Color Highlight",
+		"Craft-Twig",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"HighlightWords",
+		"JavaScript Completions",
+		"JavaScriptNext - ES6 Syntax",
+		"Oceanic Next Color Scheme",
+		"OpenGL Shading Language (GLSL)",
+		"Package Control",
+		"PHP-Twig",
+		"SassSolution",
+		"SCSS",
+		"Simple JSX",
+		"Theme - Spacegray",
+		"Vue Syntax Highlight",
+		"WordPress Completions"
+	]
+}
