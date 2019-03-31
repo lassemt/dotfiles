@@ -6,8 +6,9 @@ IGNORE = .DS_Store
 
 setup: dependencies config link
 
-link:
+link: \
 	@$(STOW) --target=$(HOME) --ignore=$(IGNORE) -Rv $(DIRS)
+	@ln -sf $(DOTDIR)/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 dependencies: \
 	brew \
@@ -37,3 +38,5 @@ fonts: \
 	brew tap caskroom/fonts
 	# install Menlo font (https://github.com/abertsch/Menlo-for-Powerline)
 	brew cask install font-menlo-for-powerline
+	
+sublime: 
