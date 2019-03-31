@@ -16,8 +16,8 @@ dependencies: \
 	./scripts/npm.sh
 
 config: \
-	fonts \
-	./scripts/macos.sh \
+	fonts
+	./scripts/macos.sh
 	./scripts/iterm.sh
 
 brew: \
