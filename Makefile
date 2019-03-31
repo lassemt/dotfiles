@@ -38,5 +38,3 @@ fonts: \
 	brew tap caskroom/fonts
 	# install Menlo font (https://github.com/abertsch/Menlo-for-Powerline)
 	brew cask install font-menlo-for-powerline
-	
-sublime: 
