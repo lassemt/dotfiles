@@ -6,9 +6,9 @@ IGNORE = .DS_Store
 
 setup: dependencies config link
 
-link: \
+link:
 	@$(STOW) --target=$(HOME) --ignore=$(IGNORE) -Rv $(DIRS)
-	@ln -sf $(DOTDIR)/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+	ln -sf $(DOTDIR)/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 dependencies: \
 	brew \
