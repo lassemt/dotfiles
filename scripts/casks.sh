@@ -21,7 +21,7 @@ brew cask install suitcase-fusion
 brew cask install discord
 brew cask install sketch
 brew cask install spotify
-brew cask install zeplin
+# brew cask install zeplin
 
 # GPG Tools
 # brew cask install gpg-suite
