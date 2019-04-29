@@ -22,6 +22,9 @@ prompt pure
 export PATH=$PATH:$HOME/bin
 alias st=subl
 
+# Youtube download mp3 alias
+alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
+
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
 
