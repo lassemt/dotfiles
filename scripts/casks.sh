@@ -21,6 +21,7 @@ brew cask install suitcase-fusion
 brew cask install discord
 brew cask install sketch
 brew cask install spotify
+brew cask install anaconda
 # brew cask install zeplin
 
 # GPG Tools

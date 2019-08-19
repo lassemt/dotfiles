@@ -5,6 +5,8 @@
 	],
 	"installed_packages":
 	[
+		"Babel",
+		"Babel Snippets",
 		"Color Highlight",
 		"Craft-Twig",
 		"EditorConfig",
