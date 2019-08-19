@@ -24,6 +24,7 @@ alias st=subl
 
 # Youtube download mp3 alias
 alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
+alias yt-mp4='youtube-dl -f best'
 
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
@@ -41,6 +42,15 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # set env variable for tty command
 export GPG_TTY=$(tty)
+
+# Add python to path
+export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:$PATH"
+
+# Add postgres to path
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Anaconda
+export PATH=/anaconda3/bin:$PATH
 
 source ~/.iterm2_shell_integration.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
