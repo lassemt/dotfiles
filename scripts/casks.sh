@@ -22,7 +22,8 @@ brew cask install discord
 brew cask install sketch
 brew cask install spotify
 brew cask install anaconda
-# brew cask install zeplin
+brew cask install postgres
+brew cask install pgadmin4
 
 # GPG Tools
 # brew cask install gpg-suite
