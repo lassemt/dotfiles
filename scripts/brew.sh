@@ -36,6 +36,7 @@ brew install youtube-dl                       # Download videos
 brew install prettyping                       # Nicer ping command
 brew install python3                          # Python
 brew install composer                         # PHP Package manager
+brew install yarn                             # 
 brew install zsh-autosuggestions              # ZSH autosuggestions
 brew install zsh-completions                  # ZSH compleytes
 brew install zsh-syntax-highlighting          # ZSH syntax highlightning
