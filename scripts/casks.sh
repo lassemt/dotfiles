@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # tap homebrew-cask to install other osx related stuff
-brew tap caskroom/cask
+brew tap homebrew/cask-cask
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 brew cask install qlcolorcode qlmarkdown qlstephen qlvideo quicklook-json quicklookase suspicious-package webpquicklook
