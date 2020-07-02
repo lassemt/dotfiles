@@ -8,7 +8,6 @@ setup: dependencies config link
 
 link:
 	@$(STOW) --target=$(HOME) --ignore=$(IGNORE) -Rv $(DIRS)
-	ln -sf $(DOTDIR)/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 dependencies: \
 	brew \
@@ -16,25 +15,17 @@ dependencies: \
 	./scripts/npm.sh
 
 config: \
-	fonts
-	./scripts/macos.sh
+	./scripts/macos.sh \
 	./scripts/iterm.sh
 
 brew: \
-	/usr/local/bin/brew
+	/usr/local/bin/brew \
 	./scripts/brew.sh
 
 /usr/local/bin/brew:
-	ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" \
 	brew analytics off
 	
 casks: \
-	/usr/local/bin/brew
+	/usr/local/bin/brew \
 	./scripts/casks.sh
-	
-fonts: \
-	/usr/local/bin/brew
-	# tap homebrew-fonts to install freely available fonts
-	brew tap caskroom/fonts
-	# install Menlo font (https://github.com/abertsch/Menlo-for-Powerline)
-	brew cask install font-menlo-for-powerline

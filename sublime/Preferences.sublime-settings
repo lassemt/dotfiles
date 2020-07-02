@@ -1,0 +1,10 @@
+{
+	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
+	"font_face": "Menlo",
+	"font_size": 18,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Spacegray.sublime-theme"
+}

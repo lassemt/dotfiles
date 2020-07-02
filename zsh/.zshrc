@@ -31,7 +31,7 @@ alias la='ls -FGall'
 alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
 alias yt-mp4='youtube-dl -f best'
 
-alias msdfgen='${HOME}/Sparetime/Experiments/msdfgen/dist/msdfgen'
+# alias msdfgen='${HOME}/Sparetime/Experiments/msdfgen/dist/msdfgen'
 
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
@@ -51,7 +51,7 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 export GPG_TTY=$(tty)
 
 # Add python to path
-export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:$PATH"
+# export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:$PATH"
 
 # Add postgres to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
