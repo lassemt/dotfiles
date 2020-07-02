@@ -4,26 +4,30 @@
 brew tap caskroom/cask
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo 
+brew cask install qlcolorcode qlmarkdown qlstephen qlvideo quicklook-json quicklookase suspicious-package webpquicklook
 
-# Browsers
-brew cask install google-chrome
-brew cask install firefox
-
-# Other software
 brew cask install 1password
+brew cask install adobe-creative-cloud 
+brew cask install blender
 brew cask install docker
-brew cask install sublime-text
-brew cask install iterm2
 brew cask install dropbox
-brew cask install adobe-creative-cloud
-brew cask install suitcase-fusion
-brew cask install discord
+brew cask install expressvpn
+brew cask install firefox
+brew cask install fontbase
+brew cask install fontforge
+brew cask install font-menlo-for-powerline 
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install miniconda
+brew cask install opera
+brew cask install pgadmin4
+brew cask install postgres
+brew cask install sequel-pro
+brew cask install slack
 brew cask install sketch
 brew cask install spotify
-brew cask install anaconda
-brew cask install postgres
-brew cask install pgadmin4
-
-# GPG Tools
-# brew cask install gpg-suite
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install transmission
+brew cask install vlc
+brew cask install zxpinstaller

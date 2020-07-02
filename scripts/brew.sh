@@ -17,8 +17,6 @@ brew install gnupg
 brew install vim
 brew install grep
 brew install openssh
-brew install screen
-
 
 # Basics
 brew install node
@@ -30,13 +28,12 @@ brew install zsh
 sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
 
 # Tools
-brew install tree                             # List dirs as tree graphs
-brew install wget                             # Download stuff from the web
-brew install youtube-dl                       # Download videos
-brew install prettyping                       # Nicer ping command
-brew install python3                          # Python
-brew install composer                         # PHP Package manager
-brew install yarn                             # 
-brew install zsh-autosuggestions              # ZSH autosuggestions
-brew install zsh-completions                  # ZSH compleytes
-brew install zsh-syntax-highlighting          # ZSH syntax highlightning
+brew install aws-elasticbeanstalk
+brew install awscli
+brew install composer
+brew install ffmpeg
+brew install wget
+brew install youtube-dl
+brew install zsh-autosuggestions
+brew install zsh-completions
+brew install zsh-syntax-highlighting
