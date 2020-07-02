@@ -806,10 +806,10 @@ defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool t
 ###############################################################################
 
 # Install Sublime Text settings
-cp -r ${HOME}/dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
-cp -r ${HOME}/dotfiles/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Package\ Control.sublime-settings 2> /dev/null
-cp -r ${HOME}/dotfiles/sublime/HighlightWords.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/HighlightWords.sublime-settings 2> /dev/null
-cp -r ${HOME}/dotfiles/sublime/ColorHighlighter.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/ColorHighlighter.sublime-settings 2> /dev/null
+cp -r ${HOME}/dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/ 2> /dev/null
+cp -r ${HOME}/dotfiles/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/ 2> /dev/null
+cp -r ${HOME}/dotfiles/sublime/HighlightWords.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/ 2> /dev/null
+cp -r ${HOME}/dotfiles/sublime/ColorHighlighter.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/ 2> /dev/null
 
 ###############################################################################
 # Transmission.app                                                            #
