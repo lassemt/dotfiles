@@ -1,23 +1,27 @@
 # LasseMT's dotfiles
-based on [Overbryd's dotfiles](https://github.com/Overbryd/dotfiles).
 
-## 1. Install xcode CLI tools
+## 1. Install homebrew
 ```
-xcode-select --install
-```
-
-## 2. Bootstrap
-On a new mac, open a Terminal and run:
-```
-curl -O https://raw.githubusercontent.com/lassemt/dotfiles/master/bootstrap.sh
-chmod +x bootstrap.sh
-./bootstrap.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-### 3. Maintenance
-Enter the ~/dotfiles directory, make changes and make it:
-
+## 2. Clone
 ```
-cd ~/dotfiles
+git clone https://github.com/lassemt/dotfiles.git
+```
+`cd` into directory and call make to bootstrap everything:
+```
 make
+```
+Symlink files only
+```
+make link
+```
+Download and install tools
+```
+make dependencies
+```
+Configure system and set defaults
+```
+make config
 ```
