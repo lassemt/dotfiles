@@ -22,16 +22,23 @@ prompt pure
 export PATH=$PATH:$HOME/bin
 alias st=subl
 
+# aliases
+alias l='ls -FG'
+alias ll='ls -FGl'
+alias la='ls -FGall'
+
 # Youtube download mp3 alias
 alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
 alias yt-mp4='youtube-dl -f best'
+
+alias msdfgen='${HOME}/Sparetime/Experiments/msdfgen/dist/msdfgen'
 
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
 
 # Change NPM global folder
-NPM_PACKAGES="${HOME}/.npm-packages"
-PATH="$NPM_PACKAGES/bin:$PATH"
+export NPM_PACKAGES="${HOME}/.npm-packages"
+export PATH="$NPM_PACKAGES/bin:$PATH"
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
@@ -50,8 +57,33 @@ export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:$PATH"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Anaconda
-export PATH=/anaconda3/bin:$PATH
+# export PATH="/usr/local/anaconda3/bin:$PATH"
+
+# Add msdfgen 
+# export PATH="${HOME}/Sparetime/Experiments/msdfgen/dist:$PATH"
+
+if type brew &>/dev/null; then
+	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+	autoload -Uz compinit
+	compinit
+fi
 
 source ~/.iterm2_shell_integration.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
