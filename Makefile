@@ -1,5 +1,5 @@
 STOW ?= stow
-DIRS ?= git zsh npm
+DIRS ?= git zsh
 DOTDIR = $(shell pwd)
 HOME = /Users/lassemejlvangtvedt
 IGNORE = .DS_Store
