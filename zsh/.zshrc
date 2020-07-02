@@ -62,11 +62,11 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 # Add msdfgen 
 # export PATH="${HOME}/Sparetime/Experiments/msdfgen/dist:$PATH"
 
-if type brew &>/dev/null; then
-	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-	autoload -Uz compinit
-	compinit
-fi
+# if type brew &>/dev/null; then
+# 	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+# 	autoload -Uz compinit
+# 	compinit
+# fi
 
 source ~/.iterm2_shell_integration.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
