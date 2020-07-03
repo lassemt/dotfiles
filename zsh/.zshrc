@@ -59,7 +59,10 @@ export GPG_TTY=$(tty)
 # export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:$PATH"
 
 # Add postgres to path
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+# Add fontforge to path 
+export PATH="/Applications/FontForge.app/Contents/MacOS:$PATH"
 
 # Anaconda
 # export PATH="/usr/local/anaconda3/bin:$PATH"
