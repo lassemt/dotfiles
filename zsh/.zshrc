@@ -64,17 +64,11 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 # Add fontforge to path 
 export PATH="/Applications/FontForge.app/Contents/MacOS:$PATH"
 
-# Anaconda
-# export PATH="/usr/local/anaconda3/bin:$PATH"
+# Miniconda
+# export PATH="/opt/miniconda3/bin:$PATH"  # commented out by conda initialize
 
 # Add msdfgen 
 # export PATH="${HOME}/Sparetime/Experiments/msdfgen/dist:$PATH"
-
-# if type brew &>/dev/null; then
-# 	FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-# 	autoload -Uz compinit
-# 	compinit
-# fi
 
 source ~/.iterm2_shell_integration.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -82,14 +76,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+        export PATH="/opt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
