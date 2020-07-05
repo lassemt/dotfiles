@@ -25,7 +25,8 @@ brew install git-lfs
 brew install zsh
 
 # set zsh as your default shell
-sudo -s 'echo /usr/local/bin/zsh >> /etc/shells' && chsh -s /usr/local/bin/zsh
+sudo sh -c "echo $(which zsh) >> /etc/shells"
+chsh -s $(which zsh)
 
 # Tools
 brew install aws-elasticbeanstalk
