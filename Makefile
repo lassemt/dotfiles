@@ -4,7 +4,7 @@ DOTDIR = $(shell pwd)
 HOME = /Users/lassemejlvangtvedt
 IGNORE = .DS_Store
 
-setup: dependencies config link
+setup: dependencies config link restart
 
 link:
 	@$(STOW) --target=$(HOME) --ignore=$(IGNORE) -Rv $(DIRS)
@@ -17,3 +17,6 @@ dependencies:
 config:
 	./scripts/macos.sh
 	./scripts/iterm.sh
+
+restart:
+	./scripts/restart.sh
