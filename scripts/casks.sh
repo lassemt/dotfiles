@@ -28,3 +28,4 @@ brew cask install the-unarchiver
 brew cask install transmission
 brew cask install vlc
 brew cask install zxpinstaller
+brew cask install workplace-chat
