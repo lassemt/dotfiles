@@ -9,6 +9,7 @@ brew cask install blender
 brew cask install docker
 brew cask install dropbox
 brew cask install expressvpn
+brew cask install figma
 brew cask install firefox
 brew cask install fontbase
 brew cask install fontforge
@@ -22,6 +23,7 @@ brew cask install postgres
 brew cask install sequel-pro
 brew cask install slack
 brew cask install sketch
+brew cask install soundflower
 brew cask install spotify
 brew cask install sublime-text
 brew cask install the-unarchiver
