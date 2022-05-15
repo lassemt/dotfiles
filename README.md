@@ -1,27 +1,11 @@
 # LasseMT's dotfiles
 
-## 1. Install homebrew
+## 1. [Install homebrew](https://brew.sh/)
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## 2. Clone
+## 2. Install dotfiles
 ```
-git clone https://github.com/lassemt/dotfiles.git
-```
-`cd` into directory and call make to bootstrap everything:
-```
-make
-```
-Symlink files only
-```
-make link
-```
-Download and install tools
-```
-make dependencies
-```
-Configure system and set defaults
-```
-make config
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lassemt/dotfiles/HEAD/install.sh)"
 ```

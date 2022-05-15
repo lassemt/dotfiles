@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["shift+super+y"],
+        "command": "emmet_evaluate_math"
+    }
+]

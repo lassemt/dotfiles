@@ -36,54 +36,37 @@ alias la='ls -FGall'
 alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
 alias yt-mp4='youtube-dl -f best'
 
-# alias msdfgen='${HOME}/Sparetime/Experiments/msdfgen/dist/msdfgen'
-
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
 
 # Change NPM global folder
 export NPM_PACKAGES="${HOME}/.npm-packages"
+export NPM_CONFIG_PREFIX="${HOME}/.npm-packages"
 export PATH="$NPM_PACKAGES/bin:$PATH"
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
 
 # Unset manpath so we can inherit from /etc/manpath via the `manpath` command
 unset MANPATH # delete if you already modified MANPATH elsewhere in your config
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-# Make mysql cli work with mamp
-# export PATH="$PATH:/Applications/MAMP/Library/bin"
-
 # set env variable for tty command
 export GPG_TTY=$(tty)
 
-# Add python to path
-# export PATH="/usr/local/opt/python/libexec/bin:/usr/local/bin:$PATH"
-
-# Add postgres to path
-export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
-# Add fontforge to path 
-export PATH="/Applications/FontForge.app/Contents/MacOS:$PATH"
-
-# Miniconda
-# export PATH="/opt/miniconda3/bin:$PATH"  # commented out by conda initialize
-
-# Add msdfgen 
-# export PATH="${HOME}/Sparetime/Experiments/msdfgen/dist:$PATH"
-
-source ~/.iterm2_shell_integration.zsh
+source "${HOME}/.iterm2_shell_integration.zsh"
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
-        export PATH="/opt/miniconda3/bin:$PATH"
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
