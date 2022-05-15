@@ -38,21 +38,21 @@ if [ "$installStow" == "y" ]; then
 fi
 
 echo_cyan "Linking dotfiles using stow"
-source "${DIR}/link.sh";
+sudo "${DIR}/link.sh";
 
 if [ "$installDependencies" == "y" ]; then
   echo_cyan "Installing dependencies..."
-  source "${DIR}/dependencies.sh";
+  sudo "${DIR}/dependencies.sh";
 fi
 
 if [ "$installApplications" == "y" ]; then
   echo_cyan "Installing applications..."
-  source "${DIR}/applications.sh";
+  sudo "${DIR}/applications.sh";
 fi
 
 if [ "$configureMac" == "y" ]; then
   echo_cyan "Setting Macos configuration..."
-  source "${DIR}/macos.sh";
+  sudo "${DIR}/macos.sh";
 fi
 
 echo_green "Done. Note that some of these changes require a logout/restart to take effect."
