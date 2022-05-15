@@ -1,4 +1,4 @@
 stow \
-	--target=${HOME}/testing \
+	--target=${HOME} \
 	--ignore=.DS_Store \
 	-Rv git zsh
