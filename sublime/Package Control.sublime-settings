@@ -26,7 +26,6 @@
 		"Svelte",
 		"Theme - Spacegray",
 		"TypeScript",
-		"Vue Syntax Highlight",
-		"WordPress Completions"
-	]
+		"Vue Syntax Highlight"
+	],
 }

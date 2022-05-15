@@ -820,7 +820,6 @@ for app in "Activity Monitor" \
 	"Safari" \
 	"SizeUp" \
 	"SystemUIServer" \
-	"Terminal" \
 	"Transmission" \
 	"iCal"; do
 	killall "${app}" &> /dev/null

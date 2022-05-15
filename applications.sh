@@ -37,20 +37,8 @@ brew install --cask \
 sudo xattr -cr ${HOME}/Library/QuickLook/*.qlgenerator
 
 # Link sublime preferences
-# Remove files that we want to replace with symlinks
-FILES="sublime/*"
-for file in $FILES
-do
-	filename=$(basename "$file")
-	# 3. Check if ~/bin/script is a symlink.
-	if [[ ! -L "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/$filename" ]]; then
-	  echo "Removing $filename"
-	  rm "${HOME}/Library/Application Support/Sublime Text 3/Packages/User/$filename"
-	fi
-done
-
 stow \
-	--target=${HOME}/Library/Application\ Support/Sublime\ Text\ 3/Packages/User \
+	--target=${HOME}/Library/Application\ Support/Sublime\ Text/Packages/User \
 	--ignore=.DS_Store \
 	-Rv sublime
 
