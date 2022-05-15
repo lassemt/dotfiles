@@ -31,7 +31,7 @@ brew install \
 
 # set zsh as your default shell
 sudo sh -c "echo $(which zsh) >> /etc/shells"
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 # instruct Homebrew to automatically load the scheduled job, ensuring Asimov is being run automatically every day:
 # TODO: This might have some problems
