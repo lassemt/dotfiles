@@ -55,4 +55,4 @@ if [ "$configureMac" == "y" ]; then
   source "${DIR}/macos.sh";
 fi
 
-echo_green echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo_green "Done. Note that some of these changes require a logout/restart to take effect."
