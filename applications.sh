@@ -5,6 +5,7 @@ brew install --cask \
 	adobe-creative-cloud \
 	android-file-transfer \
 	blender \
+	brave-browser \
 	discord \
 	docker \
 	dropbox \
