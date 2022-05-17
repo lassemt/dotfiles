@@ -802,6 +802,15 @@ defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 defaults write org.m0k.transmission RandomPort -bool true
 
 ###############################################################################
+# Automator                                                          #
+###############################################################################
+# Link sublime preferences
+stow \
+    --target=${HOME}/Library/Services \
+    --ignore=.DS_Store \
+    -Rv automator
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 for app in "Activity Monitor" \
