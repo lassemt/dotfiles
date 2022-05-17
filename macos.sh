@@ -117,6 +117,15 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
 
+# ========== Show Battery percentage in menu bar ==========
+# - Show
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
+# - Hide
+# defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool false
+
+# ========== Show display in menu bar ==========
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Display -int 18
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -254,10 +263,10 @@ defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
@@ -326,12 +335,31 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 80" ~/Library/Preferences/com.apple.finder.plist
 
-# Use list view (Nlsv) in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
-defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+# ========== View ==========
+# - as Icons
+# defaults write com.apple.Finder FXPreferredViewStyle -string icnv
+# - as Columns
+defaults write com.apple.Finder FXPreferredViewStyle -string Nlsv
+# - as Gallary View
+# defaults write com.apple.Finder FXPreferredViewStyle -string clmv
+# - as List
+# defaults write com.apple.Finder FXPreferredViewStyle -string Flwv
+
+# ========== Show Toolbar ==========
+defaults write com.apple.finder ShowSidebar -bool true
+defaults write com.apple.finder ShowPreviewPane -bool true
+
+# ========== Show Tab Bar ==========
+defaults write com.apple.finder ShowTabView -bool true
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# ========== Remove items from the Trash after 30 days ==========
+# - Checked
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+# - Unchecked
+# defaults write com.apple.finder FXRemoveOldTrashItems -bool false
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
