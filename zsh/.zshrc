@@ -36,6 +36,9 @@ alias la='ls -FGall'
 alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
 alias yt-mp4='youtube-dl -f best'
 
+# msdfgen installed via msdf-bmfont-xml
+alias msdfgen="${HOME}/.npm-packages/lib/node_modules/msdf-bmfont-xml/bin/darwin/msdfgen.osx"
+
 # Homebrew's sbin
 export PATH="/usr/local/sbin:$PATH"
 
