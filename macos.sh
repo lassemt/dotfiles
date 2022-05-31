@@ -181,6 +181,9 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 # Stop iTunes from responding to the keyboard media keys
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
+# Disable "Show help menu" cmd + shift + 7 shortcut
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 98 '<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>47</integer><integer>44</integer><integer>1179648</integer></array><key>type</key><string>standard</string></dict></dict>'
+
 ###############################################################################
 # Energy saving                                                               #
 ###############################################################################
