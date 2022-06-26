@@ -187,6 +187,9 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 98 '<dic
 # Disable Siri
 defaults write com.apple.assistant.support "Assistant Enabled" -bool false
 
+# Set default control-strip
+defaults write com.apple.controlstrip MiniCustomized '(com.apple.system.brightness, com.apple.system.volume, com.apple.system.mute, com.apple.system.screen-lock, com.apple.system.sleep)'
+
 ###############################################################################
 # Energy saving                                                               #
 ###############################################################################
@@ -852,6 +855,7 @@ for app in "Activity Monitor" \
 	"Calendar" \
 	"cfprefsd" \
 	"Contacts" \
+    "ControlStrip" \
 	"Dock" \
 	"Finder" \
 	"Google Chrome Canary" \
