@@ -38,10 +38,7 @@ brew install --cask \
 sudo xattr -cr ${HOME}/Library/QuickLook/*.qlgenerator
 
 # Link sublime preferences
-stow \
-	--target=${HOME}/Library/Application\ Support/Sublime\ Text/Packages/User \
-	--ignore=.DS_Store \
-	-Rv sublime
+echo_cyan "Sublime is not symlinking anymore. Install package control, and run sublime.sh"
 
 # iTerm config
 # Download iterm shell integrattion for zsh
