@@ -19,6 +19,8 @@ setopt    glob
 unsetopt  case_glob
 unsetopt  case_match
 
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
 # Init Pure
 autoload -U promptinit; promptinit
 prompt pure
@@ -57,8 +59,14 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 export GPG_TTY=$(tty)
 
 source "${HOME}/.iterm2_shell_integration.zsh"
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  autoload -Uz compinit
+  compinit -u
+fi
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
