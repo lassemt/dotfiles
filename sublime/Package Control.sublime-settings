@@ -16,7 +16,6 @@
 		"GitGutter",
 		"HighlightWords",
 		"JavaScript Completions",
-		"JavaScriptNext - ES6 Syntax",
 		"Oceanic Next Color Scheme",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
@@ -27,6 +26,6 @@
 		"Svelte",
 		"Theme - Spacegray",
 		"TypeScript",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
 	],
 }
