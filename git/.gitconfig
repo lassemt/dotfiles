@@ -3,7 +3,7 @@
 	email = himself@lassemt.com
 	signingkey = 11A5BF9DD0BC50F6
 
-[includeIf "hasconfig:remote.*.url:git@github.schibsted.io:**"]
+[includeIf "hasconfig:remote.*.url:git@github.schibsted.io:*/**"]
 	path = .gitconfig.schibsted
 
 [core]
