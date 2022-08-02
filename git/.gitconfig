@@ -3,6 +3,9 @@
 	email = himself@lassemt.com
 	signingkey = 11A5BF9DD0BC50F6
 
+[includeIf "hasconfig:remote.*.url:git@github.schibsted.io:**"]
+	path = .gitconfig.schibsted
+
 [core]
 	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
   # Make `git rebase` safer on macOS
