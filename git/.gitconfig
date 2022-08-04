@@ -19,9 +19,6 @@
   ui = true
   interactive = auto
 
-[gpg]
-	program = /opt/homebrew/bin/gpg
-
 [commit]
   gpgsign = true
   
