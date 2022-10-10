@@ -204,13 +204,13 @@ defaults write com.apple.controlstrip MiniCustomized '(com.apple.system.brightne
 # sudo systemsetup -setrestartfreeze on
 
 # Sleep the display after 15 minutes
-sudo pmset -a displaysleep 10
+# sudo pmset -a displaysleep 10
 
 # Disable machine sleep while charging
 # sudo pmset -c sleep 0
 
 # Set machine sleep to 5 minutes on battery
-sudo pmset -b sleep 3
+# sudo pmset -b sleep 3
 
 # Set standby delay to 24 hours (default is 1 hour)
 # sudo pmset -a standbydelay 86400
@@ -374,7 +374,7 @@ defaults write com.apple.finder FXRemoveOldTrashItems -bool true
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+# chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
 
 # Show the /Volumes folder
 sudo chflags nohidden /Volumes
