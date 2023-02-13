@@ -33,6 +33,7 @@ alias st=subl
 alias l='ls -FG'
 alias ll='ls -FGl'
 alias la='ls -FGall'
+alias awsfl='aws --profile futures-lab'
 
 # Youtube download mp3 alias
 alias yt-mp3='youtube-dl --extract-audio --audio-format mp3 --prefer-ffmpeg'
