@@ -3,31 +3,41 @@
 # upgrade all installed packages
 brew upgrade
 
-# Instll dependencies
+# Install dependencies
 brew install \
 	asimov \
-	aws-elasticbeanstalk \
 	awscli \
+	c2patool \
+	cmake \
 	composer \
 	coreutils \
-	craftcms/nitro/nitro \
+	ddev/ddev/ddev \
+	exiftool \
 	ffmpeg \
 	git \
 	git-lfs \
 	gnupg \
+	go \
 	grep \
-	mysql \
-	node \
+	hashicorp/tap/terraform \
+	highlight \
+	imagemagick \
+	jq \
+	kubernetes-cli \
 	openssh \
+	pinentry-mac \
 	s3cmd \
 	stow \
+	tree \
+	uv \
 	vim \
 	wget \
-	youtube-dl \
+	yt-dlp \
 	zsh \
 	zsh-autosuggestions \
 	zsh-completions \
-	zsh-syntax-highlighting
+	zsh-syntax-highlighting \
+	1password-cli
 
 # set zsh as your default shell
 sudo sh -c "echo $(which zsh) >> /etc/shells"
@@ -55,8 +65,8 @@ fi
 # sudo chown -R $me $npmdir
 
 # Install NPM dependencies
-npm install -g n  # node verison manager
+npm install -g @anthropic-ai/claude-code  # Claude AI CLI
+npm install -g http-server  # Simple static HTTP server
+npm install -g n  # node version manager
 npm install -g npm-check-updates  # upgrades package.json dependencies
-npm install -g pure-prompt # Pretty, minimal and fast ZSH prompt
-# MSDFgen
-npm install -g msdf-bmfont-xml
+npm install -g pure-prompt  # Pretty, minimal and fast ZSH prompt

@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-git clone https://github.com/lassemt/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles || exit
-
 # Get the directory of the currently executing script
 DIR=~/.dotfiles;
+if [ ! -d "$DIR" ]; then
+  echo_yellow "$DIR does not exist. Cloning from github."
+  git clone https://github.com/lassemt/dotfiles.git ~/.dotfiles
+fi
+
+cd "$DIR" || exit
 
 # Check if loader exist
 if [[ ! -f "${DIR}/functions.sh" ]] ; then

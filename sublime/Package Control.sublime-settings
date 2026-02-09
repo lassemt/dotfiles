@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"TypeScript",
 	],
 	"installed_packages":
 	[
@@ -19,14 +18,15 @@
 		"Oceanic Next Color Scheme",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",
-		"PHP-Twig",
 		"ReactJS",
 		"Sass",
 		"SassSolution",
 		"Simple JSX",
 		"Svelte",
+		"Terraform",
 		"Theme - Spacegray",
+		"Twig",
 		"TypeScript",
-		"Vue Syntax Highlight",
+		"Vue",
 	],
 }

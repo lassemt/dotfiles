@@ -1,11 +1,16 @@
 {
 	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
 	"font_face": "Menlo",
-	"font_size": 26,
+	"font_size": 32,
+	// The number of spaces a tab is considered equal to
+	/*"tab_size": 2,*/
+	// Set to true to insert spaces when tab is pressed
+	/*"translate_tabs_to_spaces": true,*/
 	"ignored_packages":
 	[
-		"TypeScript",
 		"Vintage",
 	],
 	"theme": "Spacegray Oceanic.sublime-theme",
+	"index_files": true,
+	"update_check": false,
 }
