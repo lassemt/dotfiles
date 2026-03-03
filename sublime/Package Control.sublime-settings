@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"TypeScript",
 	],
 	"installed_packages":
 	[
@@ -15,6 +16,7 @@
 		"GitGutter",
 		"HighlightWords",
 		"JavaScript Completions",
+		"Oceanic Color Scheme",
 		"Oceanic Next Color Scheme",
 		"OpenGL Shading Language (GLSL)",
 		"Package Control",

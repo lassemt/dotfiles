@@ -8,6 +8,7 @@
 	/*"translate_tabs_to_spaces": true,*/
 	"ignored_packages":
 	[
+		"TypeScript",
 		"Vintage",
 	],
 	"theme": "Spacegray Oceanic.sublime-theme",
