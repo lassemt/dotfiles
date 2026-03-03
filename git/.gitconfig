@@ -6,6 +6,9 @@
 [includeIf "hasconfig:remote.*.url:git@github.schibsted.io:*/**"]
 	path = .gitconfig.schibsted
 
+[includeIf "hasconfig:remote.*.url:git@https://as-git.autostoresystem.com:*/**"]
+	path = .gitconfig.autostore
+
 [core]
 	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
   # Make `git rebase` safer on macOS
